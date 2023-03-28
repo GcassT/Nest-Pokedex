@@ -11,6 +11,10 @@ async function bootstrap() {
     new ValidationPipe({
       whitelist: true,//No se pueden enviar propiedades que no esten en el DTO
       forbidNonWhitelisted: true,
+      transform: true, //Transforma los datos a los tipos de datos que se esperan
+      transformOptions: {
+        enableImplicitConversion: true,
+      },
     })
   )
 
