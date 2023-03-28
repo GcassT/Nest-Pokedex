@@ -35,8 +35,13 @@
   4. Levantar la base de datos de MongoDB
   ```
   docker-compose up -d
+
+  5.Reconstruir la base de datos con la semilla (seed)
   ```
-  5. Ejecutar el comando para levantar el servidor en modo desarrollo
+  http://localhost:3000/api/v2/seed
+  ```
+ 
+  6. Ejecutar el comando para levantar el servidor en modo desarrollo
   ```
   npm run start:dev
   ```

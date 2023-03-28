@@ -4,6 +4,7 @@ import { join } from 'path';
 import { PokemonModule } from './pokemon/pokemon.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { CommonModule } from './common/common.module';
+import { SeedModule } from './seed/seed.module';
 
 @Module({
   imports: [
@@ -12,7 +13,7 @@ import { CommonModule } from './common/common.module';
     }),
 
     MongooseModule.forRoot('mongodb://127.0.0.1:27017/nest-pokemon'),//Tuve que cambiar la url de conexión a la base de datos por la de mi pc
-    PokemonModule, CommonModule,
+    PokemonModule, CommonModule, SeedModule,
   ],
   controllers: [],
   providers: [],
