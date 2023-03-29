@@ -5,6 +5,8 @@
 #MongoDB
 /mongo
 
+.env
+
 # Logs
 logs
 *.log
