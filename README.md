@@ -39,3 +39,11 @@
    *NestJS
    *TypeScript
    *Docker
+
+# Producción de build
+1. Crear el archivo ´´´.env.production´´´
+2. Llenar las variables de entorno de producción
+3. Crear la nueva imagen de docker
+```
+  docker-compose -f docker-compose.prod.yaml --env-file .env.production up --build
+```
